@@ -57,7 +57,7 @@
 
         .itemHeader {
             .itemImage {
-                max-width: 70px;
+                max-width: 90px;
             }
         }
 

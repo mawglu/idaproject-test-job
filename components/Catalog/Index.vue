@@ -3,7 +3,7 @@
         <div :class="[$style.item, 'bg-base', 'bs-base', 'br-base']"
              v-for="product in products" :key="product.id">
             <div :class="$style.header">
-                <Rating :rating="product.rating" :id="product.id"/>
+                <Rating :class="$style.rating" :rating="product.rating" :id="product.id"/>
                 <img :class="$style.image" :src="'https://frontend-test.idaproject.com' + product.photo"
                      :alt="product.name">
                 <svg :class="$style.toBasket" @click="addToBasket(product)">
@@ -83,6 +83,10 @@
                 .image {
                     max-width: 100%;
                     height: auto;
+                }
+
+                .rating {
+                    position: absolute;
                 }
 
                 .toBasket {

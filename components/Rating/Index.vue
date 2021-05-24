@@ -35,7 +35,6 @@
     .ratingBlock {
         display: flex;
 
-
         .ratingIcon {
             width: 14px;
             height: 14px;
